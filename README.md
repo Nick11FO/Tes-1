@@ -7,10 +7,10 @@ Ada sekelompok anak yang sedang bermain puzzle. Mereka harus cepat-cepatan menem
 Algoritma:
 
 Approach pertama [linear search O(n)] -> </br>
-Cari dari awal puzzle. A->B->C->D sampai S->T. (Anggap setiap proses pencarian tiap bagian diselesaikan dengan waktu 1 detik. Bagian A memakan 1 detik). Berarti butuh 20 detik untuk algoritma ini untuk menemukan bagian T dalam puzzle tersebut. A->B->C->D->E->F->G->H->I->J->K->L->M->N->O->P->Q->R->S->T.
+Cari dari awal puzzle. A->B->C->D sampai S->T. (Anggap setiap proses pencarian tiap bagian diselesaikan dengan waktu 1 detik. Bagian A memakan 1 detik). Berarti butuh 20 detik untuk algoritma ini untuk menemukan bagian T dalam puzzle tersebut. A->B->C->D->E->F->G->H->I->J->K->L->M->N->O->P->Q->R->S->T. Setelah menemukan bagian T pada puzzle, tempatkan Tupai pada bagian T puzzle tersebut. 
 
 Approach ketiga [binear search O(log n)] -> </br>
-Langsung mencari ke tengah-tengah alphabet yaitu M (dari 26 huruf alphabet dibagi 2 = 13). Lalu mencari tahu apakah T sesudah atau sebelum huruf M. Karena T adalah sesudah M maka dicari lagi bagian tengah dari huruf alphabet ke 13(M) dan 26(Z), yaitu T (26-13 = 13/2 = 6,5; Genapkan jadi 7. 13+7=20. Huruf ke 20). Lalu ketemulah huruf T. Anggap jika setiap proses pencarian diperlukan 1 detik, maka hanya diperlukan 2 detik. M->T.
+Langsung mencari ke tengah-tengah alphabet yaitu M (dari 26 huruf alphabet dibagi 2 = 13). Lalu mencari tahu apakah T sesudah atau sebelum huruf M. Karena T adalah sesudah M maka dicari lagi bagian tengah dari huruf alphabet ke 13(M) dan 26(Z), yaitu T (26-13 = 13/2 = 6,5; Genapkan jadi 7. 13+7=20. Huruf ke 20). Lalu ketemulah huruf T. Anggap jika setiap proses pencarian diperlukan 1 detik, maka hanya diperlukan 2 detik. M->T. Setelah menemukan bagian T pada puzzle, tempatkan Tupai pada bagian T puzzle tersebut.
 
 Pseudocode:
 
